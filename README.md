@@ -23,9 +23,13 @@ Material de estudio y ejercitación de la materia PBA | UTN 2025
 
 ## Herramientas recomendadas y complementarias
 
-- IDE: IntelliJ IDEA, Eclipse o VS Code con extensión de Java.
+- IDE: IntelliJ IDEA, Eclipse, NetBeans o VS Code con extensión de Java.
 - Compilador: JDK 17+.
 - Git/GitHub: Para control de versiones y colaboración.
+
+## Extensiones recomendadas
+
+- Java Oracle Corporation oracle.com | Java Platform Extension for Visual Studio Code
 
 ## Contacto
 
