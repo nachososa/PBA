@@ -1,0 +1,33 @@
+# Ignorar carpeta Assets
+Assets/
+
+# Archivos de clase compilados
+*.class
+
+# Archivos de log
+*.log
+
+# Archivos temporales de sistema
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# Directorios de salida
+out/
+bin/
+build/
+target/
+
+# Configuraciones de IDE
+.vscode/
+.idea/
+*.iml
+
+# Archivos de Maven o Gradle (si se usan)
+.mvn/
+.gradle/
+build/
+
+# Archivos de entorno
+.env
