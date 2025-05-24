@@ -25,10 +25,5 @@ target/
 .idea/
 *.iml
 
-# Archivos de Maven o Gradle (si se usan)
-.mvn/
-.gradle/
-build/
-
 # Archivos de entorno
 .env
