@@ -39,5 +39,12 @@ java -cp bin PBA_5_monedas.Main
 javac -d bin PBA_6_figura2/*.java
 java -cp bin PBA_6_figura2.Main
 
+# Ejemplo
+javac -d bin PBA_7_figura3/*.java
+java -cp bin PBA_7_figura3.Main
+
+# Ejemplo
+javac -d bin PBA_8_equals/*.java
+java -cp bin PBA_8_equals.Main
 
 ```
