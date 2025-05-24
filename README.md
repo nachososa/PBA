@@ -1,6 +1,6 @@
 # PBA
 
-Material de estudio y ejercitación de la materia PBA | UTN 2025
+Material de estudio y ejercitación de PBA | UTN 2025
 
 ## Descripción
 
@@ -20,9 +20,9 @@ Material de estudio y ejercitación de la materia PBA | UTN 2025
 
 ## Contenido del Repositorio
 
-- ***Materiales:*** Apuntes, resúmenes, PDFs y presentaciones.
-- ***Ejercicios:*** Ejercicios prácticos resueltos (en Java).
-- ***TP:*** Resolución de Trabajos Prácticos.
+- ***TP_1:*** Resolución del Trabajo Práctico 1
+- ***U1_POO*** Apuntes y ejrcitación de POO.
+- ***U2_herencia*** Apuntes y ejrcitación de Herencia.
 
 ## Herramientas recomendadas y complementarias
 
