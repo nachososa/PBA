@@ -29,4 +29,4 @@ target/
 .env
 
 # Configuración privada de NetBeans
-nbproject/private/
+MetalGear/nbproject/private/
