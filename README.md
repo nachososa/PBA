@@ -20,9 +20,9 @@ Material de estudio y ejercitación de PBA | UTN 2025
 
 ## Contenido del Repositorio
 
-- ***TP_1:*** Resolución del Trabajo Práctico 1
-- ***U1_POO*** Apuntes y ejrcitación de POO.
-- ***U2_herencia*** Apuntes y ejrcitación de Herencia.
+- ***U1_POO*** Programación Orientada a Objetos.
+- ***U2_herencia*** Herencia y Polimorfismo.
+- ***U3_Interfaces*** Interfaces y Abstracción.
 
 ## Herramientas recomendadas y complementarias
 
