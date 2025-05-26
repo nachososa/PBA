@@ -1,5 +1,4 @@
-
-# Ignorar carpeta Assets
+# Ignorar carpeta Assets (si aplica)
 Assets/
 
 # Archivos de clase compilados
@@ -14,10 +13,11 @@ Assets/
 .DS_Store
 Thumbs.db
 
-# Directorios de salida
+# Directorios de salida / compilación
 out/
 bin/
 build/
+dist/
 target/
 
 # Configuraciones de IDE
@@ -27,4 +27,6 @@ target/
 
 # Archivos de entorno
 .env
-/PBA/nbproject/private/
+
+# Configuración privada de NetBeans
+nbproject/private/
