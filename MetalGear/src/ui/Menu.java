@@ -4,7 +4,7 @@ package ui;
 import java.util.Scanner;
 
 public class Menu {
-    
+
     // Atributos
     private final Scanner scanner;
 
@@ -48,11 +48,11 @@ public class Menu {
 
     private void iniciarNuevaPartida() {
         System.out.println("\n[Simulación] Iniciando nueva partida...");
-        System.out.println("Partida iniciada con éxito");
+        System.out.println("¡Partida iniciada con éxito!");
     }
 
     private void cargarPartida() {
         System.out.println("\n[Simulación] Cargando partida...");
-        System.out.println("Partida cargada con éxito");
+        System.out.println("¡Partida cargada con éxito!");
     }
 }
