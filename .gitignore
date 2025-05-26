@@ -27,3 +27,4 @@ target/
 
 # Archivos de entorno
 .env
+/PBA/nbproject/private/
