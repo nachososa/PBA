@@ -1,6 +1,6 @@
-# 📘 Listado de Temas: POO y Herencia (Básico)
+# POO y Herencia
 
-## 🔹 Fundamentos de POO
+## Fundamentos de POO (resumen)
 
 - **Clase**: Es una plantilla o modelo que define cómo serán los objetos (atributos + métodos).
 - **Objeto**: Es una instancia concreta de una clase, creada mediante la palabra clave `new`.
@@ -13,7 +13,7 @@
 
 ---
 
-## 🧬 Herencia y Abstracción
+## Herencia y Abstracción
 
 - **Herencia**: Mecanismo que permite crear nuevas clases a partir de otras ya existentes, reutilizando y extendiendo su funcionalidad.
 - **Clase Abstracta**: Clase que no se puede instanciar. Sirve como base para otras clases. Puede tener:
@@ -27,6 +27,6 @@
 
 ---
 
-## 🧱 Base de Java
+## Base de Java
 
 - **Clase `Object`**: Es la **superclase base de todas las clases en Java**. Todas las clases heredan implícitamente de `Object` y pueden sobrescribir sus métodos, como `toString()`, `equals()`, `hashCode()`, etc.
