@@ -1,6 +1,6 @@
 # Importar proyecto desde NetBeans
 
-El fuente de protecto se encuentra en `src/`, para trabajar en **NetBeans**, se recomienda seguir los siguientes pasos.
+El código fuente se encuentra en `src/`. Para trabajar en **NetBeans**, se recomienda seguir los siguientes pasos:
 
 ---
 
@@ -17,15 +17,16 @@ El fuente de protecto se encuentra en `src/`, para trabajar en **NetBeans**, se 
 
 2. Ir a **Archivo → Nuevo Proyecto**.
 
-3. En la ventana de tipo de proyecto, seleccioná:
+3. En la ventana de tipo de proyecto, seleccionar:
    - Categoría: `Java`
-   - Proyecto: `Proyecto Java con Ant > Proyecto Java vacío`
+   - Proyecto: `Proyecto Java with Ant > Proyecto Java vacío`
    - Hacé clic en `Siguiente`.
 
 4. En la ventana de configuración:
-   - **Nombre del Proyecto**: escribir exactamente el mismo nombre de la carpeta del repositorio. Por ejemplo: `MetalGear`.
+   - **Nombre del Proyecto**
+     - Escribir el mismo nombre de la carpeta del repositorio. Por ejemplo: `MetalGear`(opcional).
 
-5. Hacé clic en `Finalizar`.
+5. Hacer clic en `Finalizar`.
 
 ---
 
@@ -33,11 +34,11 @@ El fuente de protecto se encuentra en `src/`, para trabajar en **NetBeans**, se 
 
 Una vez creado el proyecto vacío:
 
-1. Cerrar NetBeans temporalmente (opcional).
+1. Cerrar NetBeans temporalmente
 
 2. **Reemplazar la carpeta `src`** que creó NetBeans por la carpeta `src` del repositorio.
 
 ## NetBeans
 
-Volver a abrir NetBeans (si lo cerraste).
-Abrir el proyecto (MetalGear) y Ejecutar (run)
+Volver a abrir NetBeans (si está cerrdo).
+Abrir el proyecto (MetalGear) y Ejecutar (run).
