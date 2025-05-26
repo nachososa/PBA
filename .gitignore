@@ -1,13 +1,7 @@
-# Ignorar carpeta Assets
+# Assets
 Assets/
 
-# Archivos de clase compilados
-*.class
-
-# Archivos de log
-*.log
-
-# Archivos temporales de sistema
+# Archivos temporales
 *.tmp
 *.swp
 .DS_Store
@@ -28,5 +22,12 @@ target/
 # Archivos de entorno
 .env
 
-# Configuración privada de NetBeans
-MetalGear/nbproject
+# Ignorar configuraciones locales de NetBeans
+MetalGear/nbproject/
+nbproject/
+nbproject/private/
+
+# Archivos de sistema y backups
+*.class
+*.log
+*.bak
