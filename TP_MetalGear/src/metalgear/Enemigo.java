@@ -1,6 +1,7 @@
 
 package metalgear;
 
-public class Enemigo {
-    
+public interface Enemigo {
+    void patrullar();
+    boolean detectarJugador(Posicion jugador);
 }
