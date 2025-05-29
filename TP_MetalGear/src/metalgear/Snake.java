@@ -6,6 +6,14 @@ public class Snake extends Personaje {
         super("Snake", 100, posicionInicial);
     }
 
+    public int ataqueSnake(){
+        return 0;
+    }
+    
+    public void usarItem(){
+    
+    }
+    
     @Override
     public void mover(String direccion) {
     }

@@ -3,5 +3,6 @@ package metalgear;
 
 public interface Enemigo {
     void patrullar();
-    boolean detectarJugador(Posicion jugador);
+    int atacar();
+    boolean detectarSnake(Posicion jugador);
 }

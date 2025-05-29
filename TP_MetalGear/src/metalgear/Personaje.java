@@ -1,7 +1,7 @@
-
 package metalgear;
 
 public abstract class Personaje {
+
     protected String nombre;
     protected int vida = 100;
     protected Posicion posicion;
@@ -21,19 +21,19 @@ public abstract class Personaje {
     public Posicion getPosicion() {
         return posicion;
     }
-    
+
     public String getNombre() {
         return nombre;
     }
-    
+
     public void golpeRecibido(int cantidad) {
         vida -= cantidad;
-        if (vida < 0) vida = 0;
+        if (vida < 0) {
+            vida = 0;
+        }
     }
 
     public void setPosicion(Posicion nueva) {
         this.posicion = nueva;
     }
-    
-
 }

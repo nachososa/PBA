@@ -6,19 +6,26 @@ public class Guardia extends Personaje implements Enemigo {
         super("Guardia", 50, pos);
     }
 
+    @Override
     public void patrullar() {
-        // lógica de patrulla aleatoria
+        
     }
-
-    public boolean detectarJugador(Posicion jugador) {
-        // verifica si jugador está a 1 celda
+    
+    @Override
+    public boolean detectarSnake(Posicion jugador) {
         int dx = Math.abs(jugador.getX() - this.posicion.getX());
         int dy = Math.abs(jugador.getY() - this.posicion.getY());
         return (dx + dy == 1);
     }
+    
+    @Override
+    public int atacar(){
+        return 0;
+    }
+
 
     @Override
     public void mover(String direccion) {
-        // puede ser llamado desde patrulla
+        
     }
 }

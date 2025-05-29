@@ -1,8 +1,9 @@
-
 package metalgear;
+
 import java.util.Scanner;
 
 public class Juego {
+
     private int misionesCompletadas;
     private Scanner scanner;
 
@@ -25,11 +26,16 @@ public class Juego {
             opcion = leerEntero();
 
             switch (opcion) {
-                case 1 -> iniciarMision();
-                case 2 -> guardarEstado();
-                case 3 -> cargarEstado();
-                case 4 -> System.out.println("¡Gracias por jugar!");
-                default -> System.out.println("Opción inválida. Intente de nuevo.");
+                case 1 ->
+                    iniciarMision();
+                case 2 ->
+                    guardarEstado();
+                case 3 ->
+                    cargarEstado();
+                case 4 ->
+                    System.out.println("¡Gracias por jugar!");
+                default ->
+                    System.out.println("Opción inválida. Intente de nuevo.");
             }
         } while (opcion != 4);
     }
@@ -83,7 +89,7 @@ public class Juego {
         }
     }
 
-        public static void main(String[] args) {
+    public static void main(String[] args) {
         Juego juego = new Juego();
         juego.mostrarMenu();
     }

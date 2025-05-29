@@ -1,7 +1,7 @@
-
 package metalgear;
 
 public class Item {
+
     private String nombre;
     private Posicion posicion;
 
@@ -10,6 +10,12 @@ public class Item {
         this.posicion = posicion;
     }
 
-    public String getNombre() { return nombre; }
-    public Posicion getPosicion() { return posicion; }
+    public String getNombre() {
+        return nombre;
+    }
+
+    public Posicion getPosicion() {
+        return posicion;
+    }
 }
+ //metodo de recoger
