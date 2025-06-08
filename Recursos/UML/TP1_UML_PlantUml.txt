@@ -12,7 +12,7 @@ abstract class Mision {
   +desbloquearZona()
 }
 
-class MisionIntermedia extends Mision{
+class Hangar extends Mision{
   +iniciar()
   +buscarObjeto()
 }
