@@ -10,8 +10,8 @@ Definir la posición inicial, la visibilidad y las reglas de movimiento para los
 
 - **Clase Abstracta:** `Personaje`
 - **Subclases:** `Snake`, `Guardia`, `MetalGear`
-- **Atributo básico:** `Posicion (x, y)`
-- **Método básico:** Los personajes se mueven una celda por turno, solo **vertical** u **horizontal** (nunca en diagonal).
+- **Atributos:** `Posicion (x, y)`
+- **Métodos:** Los personajes se mueven una celda por turno, solo **vertical** u **horizontal** (nunca en diagonal).
 
 ---
 
@@ -35,16 +35,37 @@ Definir la posición inicial, la visibilidad y las reglas de movimiento para los
 - Los personajes se mueven **una celda por turno**, solo en dirección **vertical** u **horizontal**.
 - No está permitido moverse en diagonal.
 
-### Direcciones válidas
+### Sistema de coordenadas
 
 El punto `(0,0)` se ubica en la **esquina inferior izquierda del mapa**.
+Usamos una grilla tipo matriz con ejes cartesianos.
 
-| Dirección    | Método asociado     | Coordenadas nuevas   |
-|--------------|---------------------|-----------------------|
-| 🔼 Arriba    | `moverArriba()`     | `(x + 1, y)`          |
-| 🔽 Abajo     | `moverAbajo()`      | `(x - 1, y)`          |
-| ◀️ Izquierda | `moverIzquierda()`  | `(x, y - 1)`          |
-| ▶️ Derecha   | `moverDerecha()`    | `(x, y + 1)`          |
+| Dirección    | Método asociado     | Coordenadas nuevas          |
+|--------------|---------------------|-----------------------------|
+| 🔼 Arriba    | `moverArriba()`     | `(x, y + 1) Sube eje Y`     |
+| 🔽 Abajo     | `moverAbajo()`      | `(x, y - 1) Baja eje Y`     |
+| ◀️ Izquierda | `moverIzquierda()`  | `(x - 1, y) X, negativo`    |
+| ▶️ Derecha   | `moverDerecha()`    | `(x + 1, y) eje X, positivo`|
+
+***Ejemplo***
+
+```plaintext
+Y↑
+6  . . . . . . .
+5  . . . * . . .
+4  . . . . . . .
+3  . . . . . . .
+2  . S . . * . .
+1  . . . . . . .
+0  L . . . . H .
+└────────────────
+X→ 0 1 2 3 4 5 6
+
+L:  (0,0)
+H:  (5,0)
+G1: (3,5)
+S:  (1,2)
+```
 
 ---
 

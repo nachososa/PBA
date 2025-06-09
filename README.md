@@ -7,7 +7,7 @@ Material de estudio y ejercitación de PBA | UTN 2025
 - ***Materia:*** PBA
 - ***Año:*** 2025
 - ***Lenguaje:*** Java
-- ***Objetivo:***  Reunir material de estudio, apuntes y ejercitación, junto con la resulución de TPs a nivel grupal.
+- ***Objetivo:*** Reunir material de estudio, apuntes y ejercitación, junto con la resulución de TPs a nivel grupal.
 
 ## Grupo 47
 
