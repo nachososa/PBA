@@ -7,7 +7,7 @@ public class Item {
     public static final char LLAVE = 'L';
     public static final char PUERTA = 'H';
     public static final char EXPLOSIVO = 'C';
-    public static final char PUNTO_ESCAPE = 'P';  // Nuevo símbolo
+    public static final char PUNTO_ESCAPE = 'P';
 
     private final char simbolo;
     private final Posicion posicion;
@@ -15,7 +15,7 @@ public class Item {
 
     public Item(char simbolo, int x, int y) {
         if (simbolo != LLAVE && simbolo != PUERTA && simbolo != EXPLOSIVO && simbolo != PUNTO_ESCAPE) {
-            throw new IllegalArgumentException("Símbolo No Válido");
+            throw new IllegalArgumentException("Simbolo No Valido");
         }
         this.simbolo = simbolo;
         this.posicion = new Posicion(x, y);

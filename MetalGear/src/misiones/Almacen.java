@@ -71,7 +71,7 @@ public class Almacen {
         if (celda.getItem() != null && celda.getItem().getSimbolo() == 'C') {
             c4Recogido = true;
             celda.setItem(null);
-            System.out.println("¡Has recogido el explosivo C4!");
+            System.out.println("Has recogido el explosivo C4!");
         }
     }
 
@@ -83,7 +83,7 @@ public class Almacen {
                 int dx = Math.abs(snake.getPosicion().getX() - enemigo.getPosicion().getX());
                 int dy = Math.abs(snake.getPosicion().getY() - enemigo.getPosicion().getY());
                 if (dx <= 3 && dy <= 3) {
-                    System.out.println("¡No puedes escapar! Hay enemigos cerca del punto de extracción.");
+                    System.out.println("No puedes escapar! Hay enemigos cerca del punto de extraccion.");
                     return false;
                 }
             }
@@ -97,7 +97,7 @@ public class Almacen {
             int dx = Math.abs(snake.getPosicion().getX() - enemigo.getPosicion().getX());
             int dy = Math.abs(snake.getPosicion().getY() - enemigo.getPosicion().getY());
             if ((dx <= 1 && dy <= 1) && !(dx == 0 && dy == 0)) {
-                System.out.println("¡Has sido capturado por un enemigo!");
+                System.out.println("Has sido capturado por un enemigo!");
                 return true;
             }
         }

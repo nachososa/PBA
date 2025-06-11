@@ -15,6 +15,14 @@ public class Guardia extends Personaje implements Enemigo {
         this.alerta = false;
     }
 
+    private boolean puedeMoverse(int deltaX, int deltaY) {
+        Posicion nuevaPos = new Posicion(
+                this.getPosicion().getX() + deltaX,
+                this.getPosicion().getY() + deltaY
+        );
+        return Mapa.getInstance().esPosicionValida(nuevaPos);
+    }
+
     @Override
     public void moverArriba() {
         if (puedeMoverse(0, 1)) {
@@ -41,15 +49,6 @@ public class Guardia extends Personaje implements Enemigo {
         if (puedeMoverse(1, 0)) {
             this.getPosicion().setX(this.getPosicion().getX() + 1);
         }
-    }
-
-    //
-    private boolean puedeMoverse(int deltaX, int deltaY) {
-        Posicion nuevaPos = new Posicion(
-                this.getPosicion().getX() + deltaX,
-                this.getPosicion().getY() + deltaY
-        );
-        return Mapa.getInstance().esPosicionValida(nuevaPos);
     }
 
     @Override
@@ -84,7 +83,6 @@ public class Guardia extends Personaje implements Enemigo {
         return alerta;
     }
 
-    //
     @Override
     public void setAlerta(boolean estado) {
         this.alerta = estado;

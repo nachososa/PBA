@@ -16,12 +16,12 @@ public class Celda {
         return personaje;
     }
 
-    public void setPersonaje(Personaje personaje) {
-        this.personaje = personaje;
-    }
-
     public Item getItem() {
         return item;
+    }
+
+    public void setPersonaje(Personaje personaje) {
+        this.personaje = personaje;
     }
 
     public void setItem(Item item) {

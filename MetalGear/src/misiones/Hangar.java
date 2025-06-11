@@ -71,7 +71,7 @@ public class Hangar {
         if (celdaActual.getItem() != null && celdaActual.getItem().getSimbolo() == 'L') {
             llaveRecogida = true;
             celdaActual.setItem(null);
-            System.out.println("¡Has recogido la llave!");
+            System.out.println("Has recogido la llave!");
         }
     }
 
@@ -85,7 +85,7 @@ public class Hangar {
             int distanciaX = Math.abs(snake.getPosicion().getX() - guardia.getPosicion().getX());
             int distanciaY = Math.abs(snake.getPosicion().getY() - guardia.getPosicion().getY());
             if (distanciaX <= 1 && distanciaY <= 1 && !(distanciaX == 0 && distanciaY == 0)) {
-                System.out.println("¡Has sido capturado por un guardia!");
+                System.out.println("Has sido capturado por un guardia");
                 return true;
             }
         }
