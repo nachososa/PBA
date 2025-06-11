@@ -1,0 +1,72 @@
+package utils;
+
+import java.io.*;
+import java.util.Random;
+
+public class Guardado {
+
+    private static final String NOMBRE_ARCHIVO = "src/saves/guardado.mg";
+    private static final String[] CODIGOS_VALIDOS = {"MG1", "MG2", "MG3"};
+
+    public static void guardarEstado(int misionesCompletadas) {
+
+        String idUnico = generarCodigoUnico();
+
+        try {
+            File carpeta = new File("src/saves");
+            if (!carpeta.exists()) {
+                carpeta.mkdirs();
+            }
+
+            try (FileWriter writer = new FileWriter(NOMBRE_ARCHIVO)) {
+                writer.write(idUnico + "\n");
+                System.out.println("Estado guardado correctamente.");
+                System.out.println("Código de partida: " + idUnico);
+            }
+
+        } catch (IOException e) {
+            System.out.println("Error al guardar el estado: " + e.getMessage());
+        }
+    }
+
+    public static int cargarEstadoPorCodigo(String codigoIngresado) {
+        for (int i = 0; i < CODIGOS_VALIDOS.length; i++) {
+            if (CODIGOS_VALIDOS[i].equals(codigoIngresado)) {
+                return i + 1;
+            }
+        }
+
+        System.out.println("Código inválido.");
+        return -1;
+    }
+
+    public static void mostrarCodigoGuardado() {
+        File archivo = new File(NOMBRE_ARCHIVO);
+        if (!archivo.exists()) {
+            System.out.println("No hay partida guardada.");
+            return;
+        }
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(archivo))) {
+            String linea;
+            while ((linea = reader.readLine()) != null) {
+                if (!linea.startsWith("#") && !linea.isBlank()) {
+                    System.out.println("Último código guardado: " + linea);
+                    return;
+                }
+            }
+            System.out.println("No se encontró un código válido en el archivo.");
+        } catch (IOException e) {
+            System.out.println("Error al leer el estado guardado.");
+        }
+    }
+
+    private static String generarCodigoUnico() {
+        Random random = new Random();
+        int numeros = 100 + random.nextInt(900);
+        char letra1 = (char) ('A' + random.nextInt(26));
+        char letra2 = (char) ('A' + random.nextInt(26));
+        char letra3 = (char) ('A' + random.nextInt(26));
+        return numeros + "" + letra1 + letra2 + letra3;
+    }
+}
