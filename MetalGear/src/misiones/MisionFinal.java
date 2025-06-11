@@ -36,9 +36,9 @@ public class MisionFinal {
         }
 
         if (vidaSnake <= 0) {
-            System.out.println("\n*** Snake ha sido derrotado. Misión fallida. ***");
+            System.out.println("\n*** Snake ha sido derrotado. Mision fallida. ***");
         } else {
-            System.out.println("\n*** ¡REX ha sido destruido! Misión completada. ***");
+            System.out.println("\n*** REX ha sido destruido! Mision completada. ***");
         }
     }
 
@@ -47,11 +47,11 @@ public class MisionFinal {
         System.out.println("*** Snake puede: ***");
         System.out.println("1 - Disparar un misil");
         System.out.println("2 - Esquivar el ataque");
-        System.out.print("\nElige una acción: ");
+        System.out.print("\nElige una accion: ");
 
         String eleccion = scanner.nextLine();
         while (!eleccion.equals("1") && !eleccion.equals("2")) {
-            System.out.print("Opción inválida. Elige 1 o 2: ");
+            System.out.print("Opcion invalida. Elige 1 o 2: ");
             eleccion = scanner.nextLine();
         }
 
@@ -63,18 +63,18 @@ public class MisionFinal {
             if (vidaRex < 0) {
                 vidaRex = 0;
             }
-            System.out.println("¡Le diste a REX!");
-            System.out.println("Daño producido: " + danio + " HP");
+            System.out.println("Le diste a REX!");
+            System.out.println("Danio producido: " + danio + " HP");
             System.out.println("Vida de REX: " + vidaRex + " HP");
         } else {
             snakeEsquivando = true;
-            System.out.println("¡Snake se prepara para esquivar el ataque!");
+            System.out.println("Snake se prepara para esquivar el ataque!");
         }
     }
 
     private void turnoRex() {
         System.out.println();
-        System.out.println("*** Metal Gear REX ataca con un Cañón Láser ***");
+        System.out.println("*** Metal Gear REX ataca con un Canion Laser ***");
 
         int danio = random.nextInt(11) + 10;  // (1)
 
@@ -85,15 +85,15 @@ public class MisionFinal {
             if (vidaSnake < 0) {
                 vidaSnake = 0;
             }
-            System.out.println("¡Esquiva exitosa!");
-            System.out.println("Daño producido: " + danioReducido + " HP");
+            System.out.println("Eludiste el ataque!");
+            System.out.println("Danio producido: " + danioReducido + " HP");
         } else {
             vidaSnake -= danio;
             if (vidaSnake < 0) {
                 vidaSnake = 0;
             }
-            System.out.println("¡Impacto directo!");
-            System.out.println("Daño producido: " + danio + " HP");
+            System.out.println("Impacto directo!");
+            System.out.println("Danio producido: " + danio + " HP");
         }
 
         System.out.println("Tu vida: " + vidaSnake + " HP");

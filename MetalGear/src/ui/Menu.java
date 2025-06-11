@@ -22,7 +22,7 @@ public class Menu {
         do {
             mostrarTitulo("METAL GEAR: THE BLOODY MISSION");
 
-            System.out.println("\nSelecciona tu opción:");
+            System.out.println("\nSelecciona tu opcion:");
             System.out.println("1. " + capitalizar(obtenerNombreMisionActual()));
             if (misionesCompletadas >= 1) {
                 System.out.println("2. Guardar partida");
@@ -30,7 +30,7 @@ public class Menu {
             System.out.println("3. Cargar partida");
             System.out.println("4. Salir");
             mostrarSeparador();
-            System.out.print("\nIngresa una opción: ");
+            System.out.print("\nIngresa una opcion: ");
 
             input = scanner.nextLine();
 
@@ -45,31 +45,31 @@ public class Menu {
                         if (misionesCompletadas >= 1) {
                             Guardado.guardarEstado(misionesCompletadas);
                         } else {
-                            System.out.println("Debes completar la Misión 1 antes de guardar una partida.");
+                            System.out.println("Debes completar la Mision 1 antes de guardar una partida.");
                         }
                     }
 
                     case 3 -> {
-                        System.out.print("Ingresa el código de partida: ");
+                        System.out.print("Ingresa el codigo de partida: ");
                         String codigo = scanner.nextLine().trim().toUpperCase();
                         int estado = Guardado.cargarEstadoPorCodigo(codigo);
                         if (estado >= 0) {
                             misionesCompletadas = estado;
                             System.out.println("Partida cargada. Estado actual: " + capitalizar(obtenerNombreMisionActual()));
                         } else {
-                            System.out.println("Código inválido o partida no encontrada.");
+                            System.out.println("Codigo invalido o partida no encontrada.");
                         }
                     }
 
                     case 4 ->
-                        System.out.println("\n¡Hasta luego, Snake!");
+                        System.out.println("\nHasta luego, Snake!");
 
                     default ->
-                        System.out.println("Opción inválida. Por favor, elija una opción válida.");
+                        System.out.println("Opcion invalida. Por favor, elija una opcion valida.");
                 }
 
             } catch (NumberFormatException e) {
-                System.out.println("Error: Debe ingresar un número válido.");
+                System.out.println("Error: Debe ingresar un numero valido.");
             }
 
         } while (opcion != 4);
@@ -84,7 +84,7 @@ public class Menu {
             case 2 ->
                 iniciarMision3();
             default -> {
-                System.out.println("\n¡Has completado todas las misiones!");
+                System.out.println("\nHas completado todas las misiones!");
                 System.out.print("¿Deseas reiniciar el juego? (S/N): ");
                 String respuesta = scanner.nextLine();
                 if (respuesta.equalsIgnoreCase("S")) {
@@ -96,8 +96,8 @@ public class Menu {
     }
 
     private void iniciarMision1() {
-        mostrarTitulo("MISIÓN 1: HANGAR DE ENTRADA");
-        System.out.println("\nPara completar esta misión Snake debe:");
+        mostrarTitulo("MISION 1: HANGAR DE ENTRADA");
+        System.out.println("\nPara completar esta mision Snake debe:");
         System.out.println("- Encontrar la tarjeta de acceso (L)");
         System.out.println("- Llegar a la puerta del hangar (H)");
         mostrarSeparador();
@@ -120,25 +120,25 @@ public class Menu {
                     mision.moverGuardias();
 
                     if (mision.verificarCaptura()) {
-                        System.out.println("¡Capturado! Misión fallida.");
+                        System.out.println("Capturado! Mision fallida.");
                         misionActiva = false;
                     } else if (mision.verificarEscapeExitoso()) {
-                        System.out.println("¡Misión completada! Has escapado del hangar.");
+                        System.out.println("Mision completada! Has escapado del hangar.");
                         misionesCompletadas = 1;
                         misionActiva = false;
                     }
                 } else {
-                    System.out.println("Entrada inválida. Use W/A/S/D para moverse.");
+                    System.out.println("Entrada invalida. Use W/A/S/D para moverse.");
                 }
             }
         }
     }
 
     private void iniciarMision2() {
-        mostrarTitulo("MISIÓN 2: ALMACÉN DE ARMAS");
-        System.out.println("\nPara completar esta misión Snake debe:");
+        mostrarTitulo("MISION 2: ALMACEN DE ARMAS");
+        System.out.println("\nPara completar esta mision Snake debe:");
         System.out.println("- Encontrar el explosivo (C)");
-        System.out.println("- Llegar al punto de extracción (P)");
+        System.out.println("- Llegar al punto de extraccion (P)");
         System.out.println("- Asegurarse que no haya enemigos a 3 celdas");
         mostrarSeparador();
 
@@ -160,23 +160,23 @@ public class Menu {
                     mision.moverGuardias();
 
                     if (mision.verificarCaptura()) {
-                        System.out.println("¡Capturado! Misión fallida.");
+                        System.out.println("Capturado! Mision fallida.");
                         misionActiva = false;
                     } else if (mision.verificarEscapeExitoso()) {
-                        System.out.println("¡Misión completada! Has asegurado el almacén.");
+                        System.out.println("Mision completada! Has asegurado el almacen.");
                         misionesCompletadas = 2;
                         misionActiva = false;
                     }
                 } else {
-                    System.out.println("Entrada inválida. Use W/A/S/D para moverse.");
+                    System.out.println("Entrada invalida. Use W/A/S/D para moverse.");
                 }
             }
         }
     }
 
     private void iniciarMision3() {
-        mostrarTitulo("MISIÓN FINAL: METAL GEAR REX");
-        System.out.println("\nPara completar esta misión Snake debe:");
+        mostrarTitulo("MISION FINAL: METAL GEAR REX");
+        System.out.println("\nPara completar esta mision Snake debe:");
         System.out.println("- Derrotar a Metal Gear REX en una batalla por turnos.");
         System.out.println(" ");
 
@@ -189,11 +189,11 @@ public class Menu {
     private String obtenerNombreMisionActual() {
         return switch (misionesCompletadas) {
             case 0 ->
-                "misión 1: Hangar de entrada";
+                "mision 1: Hangar de entrada";
             case 1 ->
-                "misión 2: Almacén de armas";
+                "mision 2: Almacen de armas";
             case 2 ->
-                "misión final: Metal Gear REX";
+                "mision final: Metal Gear REX";
             default ->
                 "juego (reiniciar)";
         };

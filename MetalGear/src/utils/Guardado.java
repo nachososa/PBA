@@ -20,7 +20,7 @@ public class Guardado {
                 writer.write(idUnico + "\n");
                 writer.write(misionesCompletadas + "\n");
                 System.out.println("Estado guardado correctamente.");
-                System.out.println("Código de partida: " + idUnico);
+                System.out.println("Codigo de partida: " + idUnico);
             }
 
         } catch (IOException e) {
@@ -31,7 +31,7 @@ public class Guardado {
     public static int cargarEstadoPorCodigo(String codigoIngresado) {
         File archivo = new File(NOMBRE_ARCHIVO);
         if (!archivo.exists()) {
-            System.out.println("No se encontró el archivo de guardado.");
+            System.out.println("No se encontro el archivo de guardado.");
             return -1;
         }
 
@@ -49,7 +49,7 @@ public class Guardado {
             System.out.println("Error al leer el archivo de guardado.");
         }
 
-        System.out.println("Código inválido o partida no encontrada.");
+        System.out.println("Codigo invalido o partida no encontrada.");
         return -1;
     }
 
@@ -63,10 +63,10 @@ public class Guardado {
         try (BufferedReader reader = new BufferedReader(new FileReader(archivo))) {
             String linea = reader.readLine();
             if (linea != null && !linea.isBlank()) {
-                System.out.println("Último código guardado: " + linea);
+                System.out.println("Ultimo codigo guardado: " + linea);
                 return;
             }
-            System.out.println("No se encontró un código válido en el archivo.");
+            System.out.println("No se encontro un codigo valido en el archivo.");
         } catch (IOException e) {
             System.out.println("Error al leer el estado guardado.");
         }

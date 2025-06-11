@@ -34,15 +34,15 @@ public abstract class Mision {
                     moverGuardias();
 
                     if (verificarCaptura()) {
-                        System.out.println("¡Capturado! Misión fallida.");
+                        System.out.println("Capturado! Mision fallida.");
                         activa = false;
                     } else if (verificarEscapeExitoso()) {
-                        System.out.println("¡Misión completada!");
+                        System.out.println("Mision completada!");
                         completada = true;
                         activa = false;
                     }
                 } else {
-                    System.out.println("Entrada inválida. Use W/A/S/D para moverse.");
+                    System.out.println("Entrada invalida. Use W/A/S/D para moverse.");
                 }
             }
         }
