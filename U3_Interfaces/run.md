@@ -28,5 +28,9 @@ javac -d bin PBA_3_relaciones2_menu/ui/*.java
 java -cp bin PBA_3_relaciones2_menu.ui.Main
 
 
+# PBA_4_interfaces1
+cd U3_Interfaces/PBA_4_interfaces1/
+javac -d bin *.java
+java -cp bin PBA_4_interfaces1.Main
 
 ```
