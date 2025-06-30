@@ -5,10 +5,10 @@
 
 ## Descripción
 
-- 📚 **Materia:** PBA
-- 🎓 **Año:** 2025
-- 💻 **Lenguaje:** Java
-- 🔍 **Objetivo:** Material de estudio y ejercitación
+- **Materia:** PBA
+- **Año:** 2025
+- **Lenguaje:** Java
+- **Objetivo:** Material de estudio y ejercitación
 
 ## Integrantes
 
