@@ -1,6 +1,5 @@
 # 🎓 UTN 2025 | PBA
 
-*Programación Básica*
 *Tecnicatura Universitaria en Tecnologías de la Información*
 
 ## Descripción
