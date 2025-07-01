@@ -1,10 +1,8 @@
-# Ejercicios
+# Ejercicio 1
 
 Escribir las clases que implementen el siguiente modelo de datos, utilizando Colecciones.
 
-Clase: Curso
-
-***Métodos:***
+## Clase: Curso | Métodos
 
 + matricularAlumno(Alumno a)
 + desmatricularAlumno(Alumno a)
@@ -12,38 +10,39 @@ Clase: Curso
 + listarAprobados()
 + listadoAlfabetico()
 
-Clase: Alumno
+## Clase: Alumno | Atributos
 
-***Atributos:***
++ nombre: String
++ legajo: int
++ notaTP1: float
 
-nombre: String
-legajo: int
-notaTP1: float
+## Consigna
 
-Luego, escribir un programa que
-
-(a) Cree el curso PBA
-(b) Matricule alumnos
-(c) Invoque a los métodos de consulta implementados en la clase Curso.
-(d) Armar un menú de opciones para el diseño de la interfaz de usuario.
++ Luego, escribir un programa que:
++ (a) Cree el curso PBA
++ (b) Matricule alumnos
++ (c) Invoque a los métodos de consulta implementados en la clase Curso.
++ (d) Armar un menú de opciones para el diseño de la interfaz de usuario.
 
 ---
 
-## Resolución | Ejercicio 1
+## Ejercicio 1 | Resolución
 
-PBA_1
+### PBA_1
 
-+ Clase Alumno
-Se crea la Clase Alumno con:
-Atributos: nombre (String) legajo (int) notaTP1 (float)
-Constructor
-Métodos get y set para los atributos
-Método auxiliar imprimirAlumno() que imprime la información del alumno con salto de línea
-Implementación en Main
+#### Clase Alumno
 
-PBA_2
++ Se crea la Clase Alumno con:
+  + Atributos: nombre (String) legajo (int) notaTP1 (float)
+  + Constructor
+  + Métodos get y set para los atributos
+  + Método auxiliar imprimirAlumno() que imprime la información del alumno con salto de línea
+  + Implementación en Main
 
-+ Clase Menu
+### PBA_2
+
+#### Clase Menu
+
 Creación de la clase Menu para que el usuario pueda Matricular y Listar Alumnos desde la consola.
 
 ```java
@@ -51,28 +50,39 @@ Creación de la clase Menu para que el usuario pueda Matricular y Listar Alumnos
 private final ArrayList<Alumno> alumnos;
 ```
 
-PBA_3
+### PBA_3
 
-+ Serializacion de Alumnos a CSV en Java
-La serialización permite persistir los datos de los alumnos en un archivo CSV.
-No se pide en el enunciado pero se implementa con fines prácticos.
-Simularía una db: data/alumnos.csv
+#### Serializacion de Alumnos a CSV en Java
 
-PBA_4
++ La serialización permite persistir los datos de los alumnos en un archivo CSV.
++ No se pide en el enunciado pero se implementa con fines prácticos.
++ Simularía una db: data/alumnos.csv
 
-+ Clase Curso: matricularAlumno
-Se crea la clase Curso en un archivo nuevo
-Se trasladan a ella los metodos agregarAlumno() y mostrarAlumnos()
-Se cambia el nombre agregarAlumno() por matricularAlumno
-Los alumnos se agregan en la db data/alumnos.csv
+### PBA_4
 
-PBA_5
+#### Clase Curso: matricularAlumno
 
-+ Clase Search
-Se agrega una Clase aparte, para buscar Alumnos por Nombre o Legajo con miras a la creacion de:
++ Se crea la clase Curso en un archivo nuevo
++ Se trasladan a ella los metodos agregarAlumno() y mostrarAlumnos()
++ Se cambia el nombre agregarAlumno() por matricularAlumno
++ Los alumnos se agregan en la db data/alumnos.csv
 
-+ desmatricularAlumno
-La funcionalidad desmatricularAlumno consite en la capacidad de eliminar Alumnos de la db data/alumnos.csv
+### PBA_5
+
+#### Clase Search
+
+Se agrega la Clase Search, en un documento nuevo, para buscar Alumnos por Nombre o Legajo.
+
+#### Clase Curso
+
+Se agrega la funcionalidad desmatricularAlumno que consite en la capacidad de eliminar Alumnos de la db data/alumnos.csv
+
++ Métodos
+  + matricularAlumno(),
+  + desmatricularAlumno(), se agrega la funcionalidad
+  + mostrarAlumnos(), devuelve todos los matriculados en orden alfabetico
+  + mostrarAprobados(), devuelve a los aprobados, esto es, a todos los que tienen nota >= 7
+  + consultarAlumno(),
 
 <p align="center">
   <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="100%" />
@@ -105,6 +115,15 @@ cd U4_Colecciones && rm -v data/alumnos.csv
 cd U4_Colecciones
 javac -d bin PBA_4/*.java
 java -cp bin PBA_4.Main
+
+# alumnos.csv
+cd U4_Colecciones && cat data/alumnos.csv
+cd U4_Colecciones && rm -v data/alumnos.csv
+
+# PBA_5
+cd U4_Colecciones
+javac -d bin PBA_5/*.java
+java -cp bin PBA_5.Main
 
 # alumnos.csv
 cd U4_Colecciones && cat data/alumnos.csv
