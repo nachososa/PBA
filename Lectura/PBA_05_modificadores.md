@@ -9,10 +9,10 @@
 
 - 🔐 Protected
   - El atributo o método es accesible desde:
-    - La misma clase
-    - Cualquier clase del mismo paquete (aunque no haya herencia)
-    - Cualquier subclase, incluso si está en otro paquete
-    - ❗No son accesibles desde clases externas fuera del paquete y sin herencia.
+  - La misma clase
+  - Cualquier clase del mismo paquete (herede o no)
+  - Cualquier subclase, aunque esté en otro paquete
+  - No es accesible desde clases que no estén en el mismo paquete y no sean subclases
 
 | Modificador  | Misma clase | Mismo paquete | Subclases (otro paquete) | Otras clases |
 |--------------|-------------|----------------|---------------------------|---------------|
