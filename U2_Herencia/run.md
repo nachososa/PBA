@@ -12,8 +12,8 @@ cd U2_Herencia/
 #-cp bin: Define el classpath
 
 # Ejemplo
-javac -d bin PBA_1_persona/*.java
-java -cp bin PBA_1_persona.Main
+javac -d bin PBA_1_persona1/*.java
+java -cp bin PBA_1_persona1.Main
 
 # Ejemplo
 javac -d bin PBA_1_persona2/*.java
