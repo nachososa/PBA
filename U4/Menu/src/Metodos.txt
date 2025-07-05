@@ -1,0 +1,20 @@
+
+import java.util.List;
+
+public class Metodos {
+
+    public static void opcionUno(List<Integer> lista) {
+        System.out.println("Elegiste la opción 1.");
+        // lógica opcional con la lista...
+    }
+
+    public static void opcionDos(List<Integer> lista) {
+        System.out.println("Elegiste la opción 2.");
+        // lógica opcional con la lista...
+    }
+
+    public static void opcionTres(List<Integer> lista) {
+        System.out.println("Elegiste la opción 3.");
+        // lógica opcional con la lista...
+    }
+}

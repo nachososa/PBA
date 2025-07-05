@@ -1,5 +1,22 @@
 # Colecciones
 
+## Java Collections Framework
+
+java.util
+
+```java
+<<Interface>> Collection
+
+    <<Interface>> Set
+    HashSet
+    LinkedHashSet
+    TreeSet
+
+    <<Interface>> List
+    ArrayList
+    LinkedList
+```
+
 ## Introducción general
 
 En Java, una **colección** es un objeto que agrupa múltiples elementos en una sola unidad. Se utiliza para **almacenar, manipular y transmitir datos** de manera eficiente. Java ofrece un amplio conjunto de interfaces y clases dentro del paquete `java.util`, conocido como el **Framework de Colecciones**, que permite trabajar con estructuras de datos como listas, conjuntos, colas y mapas.
